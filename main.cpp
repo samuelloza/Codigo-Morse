@@ -46,7 +46,7 @@ void genera(){
 	mapa["0"]="-----";
 	mapa["."]=".-.-.-";
 	mapa[","]="--..--";
-	mapa[":"]="---…";
+	mapa[":"]="---â€¦";
 	mapa["?"]="..--..";
 	mapa["/"]="-..-.";
 }
@@ -60,7 +60,7 @@ void play(string proy_uri,string uri){
     char *y = new char[rutas.length() + 1];
     strcpy(y, rutas.c_str());
 PlaySound( y, NULL, SND_FILENAME);
-	//para q exista una pqueña pausa al escuchar
+	//para q exista una pqueÃ±a pausa al escuchar
 
 }
 void dalida(string conver){
@@ -154,7 +154,7 @@ int main(){
 	genera();
 	while(true){
 		cin>>opcion;
-		if(opcion==3){cout<<"Chao"<<endl;break;}
+		if(opcion==3){cout<<"Bye"<<endl;break;}
 		if(opcion==1){
 			cout<<"Ingrese solo Letra [A-Z][0-9][ ]"<<endl;
 			letra_a_morse();
